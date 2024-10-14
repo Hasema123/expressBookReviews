@@ -28,7 +28,7 @@ app.use("/customer/auth/*", function auth(req,res,next){
         return res.status(403).json({ message: "User not logged in" });
     }
 });
- 
+
 const PORT = 5000;
 
 app.use("/customer", customer_routes);
